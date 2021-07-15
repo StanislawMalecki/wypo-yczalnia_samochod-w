@@ -5,10 +5,8 @@
 	create database db_samochody;
 	create user 'springuser'@'%' identified by 'ThePassword';
 	grant select, insert, delete, update on db_samochody.* to 'springuser'@'%';
-
 2.
 Należy zainstalować odadtek curl
-
 DODAWANIE SAMOCHODU:
 	w cmd wpisujemy bez średnika ;-)
 	curl localhost:8080/wypozycz/add -d marka=honda -d przebieg=100 -d moc=2000 -d wypozyczony=false	
